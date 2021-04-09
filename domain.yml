@@ -39,6 +39,16 @@ intents:
     use_entities: true
 - timing_of_newborn_screening_2nd_screen_timing_latest_age:
     use_entities: true
+- accessing_results_requesting_copy_of_results_child_screening_results:
+    use_entities: true
+- accessing_results_requesting_copy_of_results_adult_screening_results:
+    use_entities: true
+- accessing_results_notification_of_results_how_will_i_be_notified:
+    use_entities: true
+- accessing_results_notification_of_results_have_not_received_copy:
+    use_entities: true
+- accessing_results_timing_of_results:
+    use_entities: true
 entities: []
 slots: {}
 responses:
@@ -72,9 +82,19 @@ responses:
   utter_timing_of_newborn_screening_later_timing:
   - text: Each state has a different protocol for older samples, though generally states won't test babies older than 1 year. You can reach out to the newborn screening staff of the state your baby is born in to get more information on how they handle older samples. You can find the contact info for each state's newborn screening program on our state pages
   utter_timing_of_newborn_screening_2nd_screen_timing:
-  - text: " Although the exact timeline varies from state to state, the second newborn screen is usually performed between 1-2 weeks after the baby is born. However, not all states do a second screen. We recommend checking with the state newborn screening program to find out about the exact rules. You can find the contract info for your state's newborn screening program on our state pages"
+  - text: Although the exact timeline varies from state to state, the second newborn screen is usually performed between 1-2 weeks after the baby is born. However, not all states do a second screen. We recommend checking with the state newborn screening program to find out about the exact rules. You can find the contract info for your state's newborn screening program on our state pages
   utter_timing_of_newborn_screening_2nd_screen_timing_latest_age:
   - text: Each state has a different protocol for older samples, though generally states won't test babies older than 1 year. You can reach out to the newborn screening staff of the state your baby is born in to get more information on how they handle older samples. You can find the contact info for each state's newborn screening program on our state pages
+  utter_accessing_results_requesting_copy_of_results_child_screening_results:
+  - text: Newborn screening results should be a part of your baby's medical record. You should be able to get your newborn screening results from whichever healthcare provider saw your baby during the first few weeks of life. If that healthcare provider does not have them, you can get in touch with the newborn screening staff of the state your baby was born in and they can provide it. You can find the contact info for newborn screening staff from each state on our website
+  utter_accessing_results_requesting_copy_of_results_adult_screening_results:
+  - text: Newborn screening results should be a part of your medical record. You should be able to get your newborn screening results from whoever was your pediatrician or other healthcare provider at your time of birth. If your healthcare provider doesn't have the results, you can get in touch with the newborn screening state program. You can find the contact info for your state on our state pages
+  utter_accessing_results_notification_of_results_how_will_i_be_notified:
+  - text: Typically, the family will be notified of abnormal results within two weeks of when the test was performed, and results should be a part of your baby’s medical records. If results are normal, you may not be notified. If you have not received these results, you can get your newborn screening results from whichever healthcare provider saw your baby during the first few weeks of life. If that healthcare provider does not have them, you can get in touch with the newborn screening staff of the state your baby was born in
+  utter_accessing_results_notification_of_results_have_not_received_copy:
+  - text: Typically, the family will be notified of abnormal results within two weeks of when the test was performed, and results should be a part of your baby’s medical records. If results are normal, you may not be notified. If you have not received these results, you can get your newborn screening results from whichever healthcare provider saw your baby during the first few weeks of life. If that healthcare provider does not have them, you can get in touch with the newborn screening staff of the state your baby was born in
+  utter_accessing_results_timing_of_results:
+  - text: Typically, the family will be notified of abnormal results within two weeks of when the test was performed, and results should be a part of your baby’s medical records. If results are normal, you may not be notified. If you have not received these results, you can get your newborn screening results from whichever healthcare provider saw your baby during the first few weeks of life. If that healthcare provider does not have them, you can get in touch with the newborn screening staff of the state your baby was born in
 actions: []
 forms: {}
 e2e_actions: []

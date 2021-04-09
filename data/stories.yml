@@ -77,3 +77,28 @@ stories:
     steps:
       - intent: timing_of_newborn_screening_2nd_screen_timing_latest_age
       - action: utter_timing_of_newborn_screening_2nd_screen_timing_latest_age
+
+  - story: accessing results requesting copy of results child screening results
+    steps:
+      - intent: accessing_results_requesting_copy_of_results_child_screening_results
+      - action: utter_accessing_results_requesting_copy_of_results_child_screening_results
+
+  - story: accessing results requesting copy of results adult screening results
+    steps:
+      - intent: accessing_results_requesting_copy_of_results_adult_screening_results
+      - action: utter_accessing_results_requesting_copy_of_results_adult_screening_results
+
+  - story: accessing results notification of results how will i be notified
+    steps:
+      - intent: accessing_results_notification_of_results_how_will_i_be_notified
+      - action: utter_accessing_results_notification_of_results_how_will_i_be_notified
+
+  - story: accessing results notification of results have not received copy
+    steps:
+      - intent: accessing_results_notification_of_results_have_not_received_copy
+      - action: utter_accessing_results_notification_of_results_have_not_received_copy
+
+  - story: accessing results timing of results
+    steps:
+      - intent: accessing_results_timing_of_results
+      - action: utter_accessing_results_timing_of_results
