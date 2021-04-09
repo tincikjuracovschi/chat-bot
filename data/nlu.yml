@@ -1,138 +1,139 @@
-version: '2.0'
+version: "2.0"
 nlu:
-  - intent: greet
-    examples: |
-      - hey
-      - hello
-      - hi
-      - hello there
-      - good morning
-      - good evening
-      - moin
-      - hey there
-      - let's go
-      - hey dude
-      - goodmorning
-      - goodevening
-      - good afternoon
-  - intent: goodbye
-    examples: |
-      - good afternoon
-      - cu
-      - good by
-      - cee you later
-      - good night
-      - bye
-      - goodbye
-      - have a nice day
-      - see you around
-      - bye bye
-      - see you later
-  - intent: affirm
-    examples: |
-      - yes
-      - y
-      - indeed
-      - of course
-      - that sounds good
-      - correct
-  - intent: deny
-    examples: |
-      - no
-      - n
-      - never
-      - I don't think so
-      - don't like that
-      - no way
-      - not really
-  - intent: mood_great
-    examples: |
-      - perfect
-      - great
-      - amazing
-      - feeling like a king
-      - wonderful
-      - I am feeling very good
-      - I am great
-      - I am amazing
-      - I am going to save the world
-      - super stoked
-      - extremely good
-      - so so perfect
-      - so good
-      - so perfect
-  - intent: mood_unhappy
-    examples: |
-      - my day was horrible
-      - I am sad
-      - I don't feel very well
-      - I am disappointed
-      - super sad
-      - I'm so sad
-      - sad
-      - very sad
-      - unhappy
-      - not good
-      - not very good
-      - extremly sad
-      - so saad
-      - so sad
-  - intent: bot_challenge
-    examples: |
-      - are you a bot?
-      - are you a human?
-      - am I talking to a bot?
-      - am I talking to a human?
-  - intent: ask_exercise
-    examples: |
-      - What's a good amount of exercise for someone in the thirties?
-      - How much exercise should I be getting?
-      - How much exercise is recommended?
-      - Is walking once a day enough exercise?
-      - How much exercise should I do every day?
-      - How many times per week should I go to the gym?
-  - intent: chosen_conditions
-    examples: |
-      - Why are conditions chosen?
-      - How are conditions chosen?
-  - intent: meaning_of_results_specific_results
-    examples: |
-      - My [baby's/son's/daughter's] test results showed [specific results/numerical values/diagnosis].What does this mean/What should we do/Is this normal/Should I worry?/Is my baby ok?
-  - intent: meaning_of_results_types_of_results_possible_abnormal
-    examples: |
-      - What does an abnormal/out of range result mean?
-  - intent: meaning_of_results_types_of_results_possible_normal_within_normal
-    examples: |
-      - What does a normal/within normal limits result mean?
-  - intent: meaning_of_results_types_of_results_possible_insufficient
-    examples: |
-      - What is an inconclusive/insuficcient/unsatisfactory/error result? Why does this happen?
-  - intent: timing_of_newborn_screening_ideal_timing
-    examples: |
-      - "When should Newborn screening be done?/When is the ideal time to do Newborn Screening/How long    after birth should my baby get screened?"
-      - "Why are newborns screened at 24-48 hours? Why shouldn't they be screened earlier/later?"
-  - intent: timing_of_newborn_screening_later_timing
-    examples: |
-      - "Can older babies get screened?/Can you do newborn screening for a baby that is [insert age older than 48 hrs]?/When is the latest/age limit that newborn screening can be done?"
-  - intent: timing_of_newborn_screening_2nd_screen_timing
-    examples: |
-      - "When is the second screen typically done?"
-  - intent: timing_of_newborn_screening_2nd_screen_timing_latest_age
-    examples: |
-      - "What is the latest age that second screening can be done?"
-  - intent: accessing_results_requesting_copy_of_results_child_screening_results
-    examples: |
-      - "How can I access/see/receive a copy of my baby's/child's (including older child) newborn screening results?"
-      - Hi, I want to access my newborn child screening result. How can I do that ?
-  - intent: accessing_results_requesting_copy_of_results_adult_screening_results
-    examples: |
-      - "How can I access/view/receive a copy of my own newborn screening results? (as an adult)"
-  - intent: accessing_results_notification_of_results_how_will_i_be_notified
-    examples: |
-      - "How Will I be notified about my child's newborn screening results?"
-  - intent: accessing_results_notification_of_results_have_not_received_copy
-    examples: |
-      - "Why haven't I received/didn’t I receive a copy of my baby's newborn screening results?"
-  - intent: accessing_results_timing_of_results
-    examples: |
-      - "How long does it take for results to come back?/I tested on[date] and still don't have results back, when will I receive results?"
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: ask_exercise
+  examples: |
+    - What's a good amount of exercise for someone in the thirties?
+    - How much exercise should I be getting?
+    - How much exercise is recommended?
+    - Is walking once a day enough exercise?
+    - How much exercise should I do every day?
+    - How many times per week should I go to the gym?
+- intent: chosen_conditions
+  examples: |
+    - Why are conditions chosen?
+    - How are conditions chosen?
+- intent: meaning_of_results_specific_results
+  examples: |
+    - My [baby's/son's/daughter's] test results showed [specific results/numerical values/diagnosis].What does this mean/What should we do/Is this normal/Should I worry?/Is my baby ok?
+- intent: meaning_of_results_types_of_results_possible_abnormal
+  examples: |
+    - What does an abnormal/out of range result mean?
+- intent: meaning_of_results_types_of_results_possible_normal_within_normal
+  examples: |
+    - What does a normal/within normal limits result mean?
+- intent: meaning_of_results_types_of_results_possible_insufficient
+  examples: |
+    - What is an inconclusive/insuficcient/unsatisfactory/error result? Why does this happen?
+- intent: timing_of_newborn_screening_ideal_timing
+  examples: |
+    - "When should Newborn screening be done?/When is the ideal time to do Newborn Screening/How long    after birth should my baby get screened?"
+    - "Why are newborns screened at 24-48 hours? Why shouldn't they be screened earlier/later?"
+- intent: timing_of_newborn_screening_later_timing
+  examples: |
+    - "Can older babies get screened?/Can you do newborn screening for a baby that is [insert age older than 48 hrs]?/When is the latest/age limit that newborn screening can be done?"
+- intent: timing_of_newborn_screening_2nd_screen_timing
+  examples: |
+    - "When is the second screen typically done?"
+- intent: timing_of_newborn_screening_2nd_screen_timing_latest_age
+  examples: |
+    - "What is the latest age that second screening can be done?"
+- intent: accessing_results_requesting_copy_of_results_child_screening_results
+  examples: |
+    - "How can I access/see/receive a copy of my baby's/child's (including older child) newborn screening results?"
+    - Hi, I want to access my newborn child screening result. How can I do that ?
+    - How can I access/see/receive a copy of my baby's/child's (including older child) newborn screening results?
+- intent: accessing_results_requesting_copy_of_results_adult_screening_results
+  examples: |
+    - "How can I access/view/receive a copy of my own newborn screening results? (as an adult)"
+- intent: accessing_results_notification_of_results_how_will_i_be_notified
+  examples: |
+    - "How Will I be notified about my child's newborn screening results?"
+- intent: accessing_results_notification_of_results_have_not_received_copy
+  examples: |
+    - "Why haven't I received/didn’t I receive a copy of my baby's newborn screening results?"
+- intent: accessing_results_timing_of_results
+  examples: |
+    - "How long does it take for results to come back?/I tested on[date] and still don't have results back, when will I receive results?"
