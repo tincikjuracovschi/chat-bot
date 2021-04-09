@@ -1,0 +1,79 @@
+version: '2.0'
+
+stories:
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
+
+  - story: sad path 1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+
+  - story: sad path 2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: ask exercise
+    steps:
+      - intent: ask_exercise
+      - action: utter_exercise_info
+
+  - story: chosen conditions
+    steps:
+      - intent: chosen_conditions
+      - action: utter_chosen_conditions
+
+  - story: meaning of results specific results
+    steps:
+      - intent: meaning_of_results_specific_results
+      - action: utter_meaning_of_results_specific_results
+
+  - story: meaning of results types of results possible abnormal
+    steps:
+      - intent: meaning_of_results_types_of_results_possible_abnormal
+      - action: utter_meaning_of_results_types_of_results_possible_abnormal
+
+  - story: meaning of results types of results possible normal within normal
+    steps:
+      - intent: meaning_of_results_types_of_results_possible_normal_within_normal
+      - action: utter_meaning_of_results_types_of_results_possible_normal_within_normal
+
+  - story: meaning of results types of results possible insufficient
+    steps:
+      - intent: meaning_of_results_types_of_results_possible_insufficient
+      - action: utter_meaning_of_results_types_of_results_possible_insufficient
+
+  - story: timing of newborn screening ideal timing
+    steps:
+      - intent: timing_of_newborn_screening_ideal_timing
+      - action: utter_timing_of_newborn_screening_ideal_timing
+
+  - story: timing of newborn screening later timing
+    steps:
+      - intent: timing_of_newborn_screening_later_timing
+      - action: utter_timing_of_newborn_screening_later_timing
+
+  - story: timing of newborn screening 2nd screen timing
+    steps:
+      - intent: timing_of_newborn_screening_2nd_screen_timing
+      - action: utter_timing_of_newborn_screening_2nd_screen_timing
+
+  - story: timing of newborn screening 2nd screen timing latest age
+    steps:
+      - intent: timing_of_newborn_screening_2nd_screen_timing_latest_age
+      - action: utter_timing_of_newborn_screening_2nd_screen_timing_latest_age

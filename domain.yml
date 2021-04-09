@@ -1,0 +1,80 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- ask_exercise:
+    use_entities: true
+- chosen_conditions:
+    use_entities: true
+- meaning_of_results_specific_results:
+    use_entities: true
+- meaning_of_results_types_of_results_possible_abnormal:
+    use_entities: true
+- meaning_of_results_types_of_results_possible_normal_within_normal:
+    use_entities: true
+- meaning_of_results_types_of_results_possible_insufficient:
+    use_entities: true
+- timing_of_newborn_screening_ideal_timing:
+    use_entities: true
+- timing_of_newborn_screening_later_timing:
+    use_entities: true
+- timing_of_newborn_screening_2nd_screen_timing:
+    use_entities: true
+- timing_of_newborn_screening_2nd_screen_timing_latest_age:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_exercise_info:
+  - text: Most healthy adults should aim to get about 150 min of moderate exercise per week. This include activities like a brisk walk or yard work.
+  utter_chosen_conditions:
+  - text: While each state has a different process for adding a condition to their panel, typically collaborative groups including researchers, clinicians, and advocacy organization work together and submit an application to the Advisory Committee on Heritable Disorders in Newborns and Children to nominate a condition to be added to the Recommended Uniform Screening Panel.
+  utter_meaning_of_results_specific_results:
+  - text: Unfortunately we can't provide advice on lab testing results. Please contact your baby's healthcare provider to get further information. Your baby's healthcare provider can explain what these results mean for you and your family. If you need help connecting to a healthcare provider about your baby's results, we can help you connect to someone.
+  utter_meaning_of_results_types_of_results_possible_abnormal:
+  - text: A positive/out-of-range/abnormal result means that the baby’s screening exam shows signs that the baby may be at higher risk of having one or more of the conditions included on the newborn screening panel. It is important to follow up with your healthcare provider quickly for information on follow up testing.
+  utter_meaning_of_results_types_of_results_possible_normal_within_normal:
+  - text: A 'negative' or 'in-range' result means that the baby’s blood test did not show any signs of the conditions included on the newborn screening panel, and no follow up is necessary.
+  utter_meaning_of_results_types_of_results_possible_insufficient:
+  - text: "An 'insufficient' result may mean that your child needs to repeat the screen. Here are some of the issues that may have caused the specimen to be considered unsatisfactory: not enough blood collected; there was contamination; the blood did not dry on the filter paper properly; and several other reasons. You should contact the baby's healthcare provider or state newborn screening program to ask about the procedures for collecting a new specimen."
+  utter_timing_of_newborn_screening_ideal_timing:
+  - text: The blood test is generally performed when a baby is 24 to 48 hours old. This timing is important because certain conditions may go undetected if the blood sample is drawn before 24 hours of age. If the blood is drawn after 48 hours of age, there could be a life-threatening delay in providing care to an infant that has the condition
+  utter_timing_of_newborn_screening_later_timing:
+  - text: Each state has a different protocol for older samples, though generally states won't test babies older than 1 year. You can reach out to the newborn screening staff of the state your baby is born in to get more information on how they handle older samples. You can find the contact info for each state's newborn screening program on our state pages
+  utter_timing_of_newborn_screening_2nd_screen_timing:
+  - text: " Although the exact timeline varies from state to state, the second newborn screen is usually performed between 1-2 weeks after the baby is born. However, not all states do a second screen. We recommend checking with the state newborn screening program to find out about the exact rules. You can find the contract info for your state's newborn screening program on our state pages"
+  utter_timing_of_newborn_screening_2nd_screen_timing_latest_age:
+  - text: Each state has a different protocol for older samples, though generally states won't test babies older than 1 year. You can reach out to the newborn screening staff of the state your baby is born in to get more information on how they handle older samples. You can find the contact info for each state's newborn screening program on our state pages
+actions: []
+forms: {}
+e2e_actions: []
