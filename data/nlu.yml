@@ -137,3 +137,46 @@ nlu:
   - intent: accessing_results_timing_of_results
     examples: |
       - How long does it take for results to come back?/I tested on[date] and still don't have results back, when will I receive results?
+  - intent: following_up_on_results_screen_positive_follow_up_second_screen_why_is_done
+    examples: |
+      - Why is a second screen/rescreening done?
+  - intent: following_up_on_results_screen_positive_follow_up_second_screen_positive_1st_test
+    examples: |
+      - My baby's first screening was abnormal/positive, but 2nd screening was normal. Are more tests needed/what should we do next?
+  - intent: following_up_on_results_screen_positive_follow_up_second_screen_negative_1st_test
+    examples: |
+      - My baby's first screening was normal/negative, but 2nd screening was abnormal.
+  - intent: following_up_on_results_confirmatory_testing_1st_screen_positive_2nd_negative
+    examples: |
+      - My baby's first screen was abnormal/positive, but confirmatory testing/follow up tests were negative. What does this mean? Is this accurate? Next steps?
+  - intent: following_up_on_results_confirmatory_testing_duration_of_testing
+    examples: |
+      - How long will results for confirmatory/follow up testing take?
+  - intent: following_up_on_results_retesting
+    examples: |
+      - Why does my baby need to be retested/why does testing/screening need to be redone?
+  - intent: following_up_on_results_requesting_additional_testing_for_conditions_not_tested_for_in_my_state
+    examples: |
+      - Can I request additional/supplemental tests for conditions not tested for in my state?
+  - intent: following_up_on_results_requesting_additional_testing_is_available
+    examples: |
+      - What additional screening/supplemental testing is available/should I request?
+  - intent: privacy_blood_spot_research_residual_dried_blood_spot
+    examples: |
+      - What happens with the residual dried blood spot?
+  - intent: privacy_blood_spot_research_is_sample_kept_indefinitely
+    examples: |
+      - Is sample kept/stored indefinitely?
+  - intent: privacy_opt_out_of_newborn_screening
+    examples: |
+      - How Can I refuse/opt out of newborn screening?
+      - I want to refuse of newborn screening, how can I do that?
+  - intent: privacy_opt_out_of_sample_being_stored
+    examples: |
+      - Can I refuse/opt out of sample being stored?
+  - intent: privacy_privacy_of_results_information_kept_private
+    examples: |
+      - Who has access to the data from Newborn Screening/How is my information kept private?
+  - intent: privacy_privacy_of_results_screening_through_a_private_company
+    examples: |
+      - Can I do screening through a private company, not the government?

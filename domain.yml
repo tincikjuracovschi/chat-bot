@@ -5,96 +5,153 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- greet:
-    use_entities: true
-- goodbye:
-    use_entities: true
-- affirm:
-    use_entities: true
-- deny:
-    use_entities: true
-- mood_great:
-    use_entities: true
-- mood_unhappy:
-    use_entities: true
-- bot_challenge:
-    use_entities: true
-- ask_exercise:
-    use_entities: true
-- chosen_conditions:
-    use_entities: true
-- meaning_of_results_specific_results:
-    use_entities: true
-- meaning_of_results_types_of_results_possible_abnormal:
-    use_entities: true
-- meaning_of_results_types_of_results_possible_normal_within_normal:
-    use_entities: true
-- meaning_of_results_types_of_results_possible_insufficient:
-    use_entities: true
-- timing_of_newborn_screening_ideal_timing:
-    use_entities: true
-- timing_of_newborn_screening_later_timing:
-    use_entities: true
-- timing_of_newborn_screening_2nd_screen_timing:
-    use_entities: true
-- timing_of_newborn_screening_2nd_screen_timing_latest_age:
-    use_entities: true
-- accessing_results_requesting_copy_of_results_child_screening_results:
-    use_entities: true
-- accessing_results_requesting_copy_of_results_adult_screening_results:
-    use_entities: true
-- accessing_results_notification_of_results_how_will_i_be_notified:
-    use_entities: true
-- accessing_results_notification_of_results_have_not_received_copy:
-    use_entities: true
-- accessing_results_timing_of_results:
-    use_entities: true
+  - privacy_opt_out_of_newborn_screening:
+      use_entities: true
+  - greet:
+      use_entities: true
+  - goodbye:
+      use_entities: true
+  - affirm:
+      use_entities: true
+  - deny:
+      use_entities: true
+  - mood_great:
+      use_entities: true
+  - mood_unhappy:
+      use_entities: true
+  - bot_challenge:
+      use_entities: true
+  - ask_exercise:
+      use_entities: true
+  - chosen_conditions:
+      use_entities: true
+  - meaning_of_results_specific_results:
+      use_entities: true
+  - meaning_of_results_types_of_results_possible_abnormal:
+      use_entities: true
+  - meaning_of_results_types_of_results_possible_normal_within_normal:
+      use_entities: true
+  - meaning_of_results_types_of_results_possible_insufficient:
+      use_entities: true
+  - timing_of_newborn_screening_ideal_timing:
+      use_entities: true
+  - timing_of_newborn_screening_later_timing:
+      use_entities: true
+  - timing_of_newborn_screening_2nd_screen_timing:
+      use_entities: true
+  - timing_of_newborn_screening_2nd_screen_timing_latest_age:
+      use_entities: true
+  - accessing_results_requesting_copy_of_results_child_screening_results:
+      use_entities: true
+  - accessing_results_requesting_copy_of_results_adult_screening_results:
+      use_entities: true
+  - accessing_results_notification_of_results_how_will_i_be_notified:
+      use_entities: true
+  - accessing_results_notification_of_results_have_not_received_copy:
+      use_entities: true
+  - accessing_results_timing_of_results:
+      use_entities: true
+  - following_up_on_results_screen_positive_follow_up_second_screen_why_is_done:
+      use_entities: true
+  - ? following_up_on_results_screen_positive_follow_up_second_screen_positive_1st_test
+    : use_entities: true
+  - ? following_up_on_results_screen_positive_follow_up_second_screen_negative_1st_test
+    : use_entities: true
+  - ? following_up_on_results_confirmatory_testing_1st_screen_positive_2nd_negative
+    : use_entities: true
+  - following_up_on_results_confirmatory_testing_duration_of_testing:
+      use_entities: true
+  - following_up_on_results_retesting:
+      use_entities: true
+  - ? following_up_on_results_requesting_additional_testing_for_conditions_not_tested_for_in_my_state
+    : use_entities: true
+  - following_up_on_results_requesting_additional_testing_is_available:
+      use_entities: true
+  - privacy_blood_spot_research_residual_dried_blood_spot:
+      use_entities: true
+  - privacy_blood_spot_research_is_sample_kept_indefinitely:
+      use_entities: true
+  - privacy_opt_out_of_sample_being_stored:
+      use_entities: true
+  - privacy_privacy_of_results_information_kept_private:
+      use_entities: true
+  - privacy_privacy_of_results_screening_through_a_private_company:
+      use_entities: true
 entities: []
 slots: {}
 responses:
   utter_greet:
-  - text: Hey! How are you?
+    - text: Hey! How are you?
   utter_cheer_up:
-  - image: https://i.imgur.com/nGF1K8f.jpg
-    text: 'Here is something to cheer you up:'
+    - image: https://i.imgur.com/nGF1K8f.jpg
+      text: 'Here is something to cheer you up:'
   utter_did_that_help:
-  - text: Did that help you?
+    - text: Did that help you?
   utter_happy:
-  - text: Great, carry on!
+    - text: Great, carry on!
   utter_goodbye:
-  - text: Bye
+    - text: Bye
   utter_iamabot:
-  - text: I am a bot, powered by Rasa.
+    - text: I am a bot, powered by Rasa.
   utter_exercise_info:
-  - text: Most healthy adults should aim to get about 150 min of moderate exercise per week. This include activities like a brisk walk or yard work.
+    - text: Most healthy adults should aim to get about 150 min of moderate exercise per week. This include activities like a brisk walk or yard work.
   utter_chosen_conditions:
-  - text: While each state has a different process for adding a condition to their panel, typically collaborative groups including researchers, clinicians, and advocacy organization work together and submit an application to the Advisory Committee on Heritable Disorders in Newborns and Children to nominate a condition to be added to the Recommended Uniform Screening Panel.
+    - text: While each state has a different process for adding a condition to their panel, typically collaborative groups including researchers, clinicians, and advocacy organization work together and submit an application to the Advisory Committee on Heritable Disorders in Newborns and Children to nominate a condition to be added to the Recommended Uniform Screening Panel.
   utter_meaning_of_results_specific_results:
-  - text: Unfortunately we can't provide advice on lab testing results. Please contact your baby's healthcare provider to get further information. Your baby's healthcare provider can explain what these results mean for you and your family. If you need help connecting to a healthcare provider about your baby's results, we can help you connect to someone.
+    - text: Unfortunately we can't provide advice on lab testing results. Please contact your baby's healthcare provider to get further information. Your baby's healthcare provider can explain what these results mean for you and your family. If you need help connecting to a healthcare provider about your baby's results, we can help you connect to someone.
   utter_meaning_of_results_types_of_results_possible_abnormal:
-  - text: A positive/out-of-range/abnormal result means that the baby’s screening exam shows signs that the baby may be at higher risk of having one or more of the conditions included on the newborn screening panel. It is important to follow up with your healthcare provider quickly for information on follow up testing.
+    - text: A positive/out-of-range/abnormal result means that the baby’s screening exam shows signs that the baby may be at higher risk of having one or more of the conditions included on the newborn screening panel. It is important to follow up with your healthcare provider quickly for information on follow up testing.
   utter_meaning_of_results_types_of_results_possible_normal_within_normal:
-  - text: A 'negative' or 'in-range' result means that the baby’s blood test did not show any signs of the conditions included on the newborn screening panel, and no follow up is necessary.
+    - text: A 'negative' or 'in-range' result means that the baby’s blood test did not show any signs of the conditions included on the newborn screening panel, and no follow up is necessary.
   utter_meaning_of_results_types_of_results_possible_insufficient:
-  - text: "An 'insufficient' result may mean that your child needs to repeat the screen. Here are some of the issues that may have caused the specimen to be considered unsatisfactory: not enough blood collected; there was contamination; the blood did not dry on the filter paper properly; and several other reasons. You should contact the baby's healthcare provider or state newborn screening program to ask about the procedures for collecting a new specimen."
+    - text: "An 'insufficient' result may mean that your child needs to repeat the screen. Here are some of the issues that may have caused the specimen to be considered unsatisfactory: not enough blood collected; there was contamination; the blood did not dry on the filter paper properly; and several other reasons. You should contact the baby's healthcare provider or state newborn screening program to ask about the procedures for collecting a new specimen."
   utter_timing_of_newborn_screening_ideal_timing:
-  - text: The blood test is generally performed when a baby is 24 to 48 hours old. This timing is important because certain conditions may go undetected if the blood sample is drawn before 24 hours of age. If the blood is drawn after 48 hours of age, there could be a life-threatening delay in providing care to an infant that has the condition
+    - text: The blood test is generally performed when a baby is 24 to 48 hours old. This timing is important because certain conditions may go undetected if the blood sample is drawn before 24 hours of age. If the blood is drawn after 48 hours of age, there could be a life-threatening delay in providing care to an infant that has the condition
   utter_timing_of_newborn_screening_later_timing:
-  - text: Each state has a different protocol for older samples, though generally states won't test babies older than 1 year. You can reach out to the newborn screening staff of the state your baby is born in to get more information on how they handle older samples. You can find the contact info for each state's newborn screening program on our state pages
+    - text: Each state has a different protocol for older samples, though generally states won't test babies older than 1 year. You can reach out to the newborn screening staff of the state your baby is born in to get more information on how they handle older samples. You can find the contact info for each state's newborn screening program on our state pages
   utter_timing_of_newborn_screening_2nd_screen_timing:
-  - text: Although the exact timeline varies from state to state, the second newborn screen is usually performed between 1-2 weeks after the baby is born. However, not all states do a second screen. We recommend checking with the state newborn screening program to find out about the exact rules. You can find the contract info for your state's newborn screening program on our state pages
+    - text: Although the exact timeline varies from state to state, the second newborn screen is usually performed between 1-2 weeks after the baby is born. However, not all states do a second screen. We recommend checking with the state newborn screening program to find out about the exact rules. You can find the contract info for your state's newborn screening program on our state pages
   utter_timing_of_newborn_screening_2nd_screen_timing_latest_age:
-  - text: Each state has a different protocol for older samples, though generally states won't test babies older than 1 year. You can reach out to the newborn screening staff of the state your baby is born in to get more information on how they handle older samples. You can find the contact info for each state's newborn screening program on our state pages
+    - text: Each state has a different protocol for older samples, though generally states won't test babies older than 1 year. You can reach out to the newborn screening staff of the state your baby is born in to get more information on how they handle older samples. You can find the contact info for each state's newborn screening program on our state pages
   utter_accessing_results_requesting_copy_of_results_child_screening_results:
-  - text: Newborn screening results should be a part of your baby's medical record. You should be able to get your newborn screening results from whichever healthcare provider saw your baby during the first few weeks of life. If that healthcare provider does not have them, you can get in touch with the newborn screening staff of the state your baby was born in and they can provide it. You can find the contact info for newborn screening staff from each state on our website
+    - text: Newborn screening results should be a part of your baby's medical record. You should be able to get your newborn screening results from whichever healthcare provider saw your baby during the first few weeks of life. If that healthcare provider does not have them, you can get in touch with the newborn screening staff of the state your baby was born in and they can provide it. You can find the contact info for newborn screening staff from each state on our website
   utter_accessing_results_requesting_copy_of_results_adult_screening_results:
-  - text: Newborn screening results should be a part of your medical record. You should be able to get your newborn screening results from whoever was your pediatrician or other healthcare provider at your time of birth. If your healthcare provider doesn't have the results, you can get in touch with the newborn screening state program. You can find the contact info for your state on our state pages
+    - text: Newborn screening results should be a part of your medical record. You should be able to get your newborn screening results from whoever was your pediatrician or other healthcare provider at your time of birth. If your healthcare provider doesn't have the results, you can get in touch with the newborn screening state program. You can find the contact info for your state on our state pages
   utter_accessing_results_notification_of_results_how_will_i_be_notified:
-  - text: Typically, the family will be notified of abnormal results within two weeks of when the test was performed, and results should be a part of your baby’s medical records. If results are normal, you may not be notified. If you have not received these results, you can get your newborn screening results from whichever healthcare provider saw your baby during the first few weeks of life. If that healthcare provider does not have them, you can get in touch with the newborn screening staff of the state your baby was born in
+    - text: Typically, the family will be notified of abnormal results within two weeks of when the test was performed, and results should be a part of your baby’s medical records. If results are normal, you may not be notified. If you have not received these results, you can get your newborn screening results from whichever healthcare provider saw your baby during the first few weeks of life. If that healthcare provider does not have them, you can get in touch with the newborn screening staff of the state your baby was born in
   utter_accessing_results_notification_of_results_have_not_received_copy:
-  - text: Typically, the family will be notified of abnormal results within two weeks of when the test was performed, and results should be a part of your baby’s medical records. If results are normal, you may not be notified. If you have not received these results, you can get your newborn screening results from whichever healthcare provider saw your baby during the first few weeks of life. If that healthcare provider does not have them, you can get in touch with the newborn screening staff of the state your baby was born in
+    - text: Typically, the family will be notified of abnormal results within two weeks of when the test was performed, and results should be a part of your baby’s medical records. If results are normal, you may not be notified. If you have not received these results, you can get your newborn screening results from whichever healthcare provider saw your baby during the first few weeks of life. If that healthcare provider does not have them, you can get in touch with the newborn screening staff of the state your baby was born in
   utter_accessing_results_timing_of_results:
-  - text: Typically, the family will be notified of abnormal results within two weeks of when the test was performed, and results should be a part of your baby’s medical records. If results are normal, you may not be notified. If you have not received these results, you can get your newborn screening results from whichever healthcare provider saw your baby during the first few weeks of life. If that healthcare provider does not have them, you can get in touch with the newborn screening staff of the state your baby was born in
-actions: []
+    - text: Typically, the family will be notified of abnormal results within two weeks of when the test was performed, and results should be a part of your baby’s medical records. If results are normal, you may not be notified. If you have not received these results, you can get your newborn screening results from whichever healthcare provider saw your baby during the first few weeks of life. If that healthcare provider does not have them, you can get in touch with the newborn screening staff of the state your baby was born in
+  ? utter_following_up_on_results_screen_positive_follow_up_second_screen_why_is_done
+  : - text: The number of times a baby has to undergo newborn blood spot screening varies depending on where the baby is born. Some states in the United States require that babies undergo two blood spot screenings, but not all. The second newborn screen is typically used to catch babies that may have been missed through the first newborn screen. If you have a child or know of a child that received a positive result for either the first or second newborn screen, confirmatory testing may be needed.
+  ? utter_following_up_on_results_screen_positive_follow_up_second_screen_positive_1st_test
+  : - text: You should follow up with your healthcare provider about additional testing as they will be able to reference your specific results
+  ? utter_following_up_on_results_screen_positive_follow_up_second_screen_negative_1st_test
+  : - text: The second newborn screen is typically used to catch babies that may have been missed through the first newborn screen. If you have a child or know of a child that received a positive result for either the first or second newborn screen, confirmatory testing may be needed. You should follow up with your healthcare provider about additional testing, as they will be able to reference your specific results
+  ? utter_following_up_on_results_confirmatory_testing_1st_screen_positive_2nd_negative
+  : - text: After going through screening, which is meant to catch anyone with a risk of having a condition, the diagnostic/ confirmatory testing is more specific and accurate. There are times when a screen maybe positive and a confirmatory test is negative meaning the person or child does not have that condition. You should follow up with your healthcare provider about any next steps, since they will be able to reference your specific results
+  utter_following_up_on_results_confirmatory_testing_duration_of_testing:
+    - text: Depending on which type of confirmatory test was performed, it can take 1-3 weeks to get the results. You can learn more about confirmatory testing on our website. We recommend you follow up with your healthcare provider with additional questions.
+  utter_following_up_on_results_retesting:
+    - text: Although it doesn't happen all the time, sometimes the newborn screening blood specimen does need to be collected again due to an error. There may be a few reasons why your baby needs to have the screening done again:not enough blood collected; there was contamination; the blood did not dry on the filter paper properly; and several other reasons. You should contact the baby's healthcare provider to ask about the procedures for collecting a new specimen.
+  ? utter_following_up_on_results_requesting_additional_testing_for_conditions_not_tested_for_in_my_state
+  : - text: Yes, there are some labs that do additional screening that can be performed after the state screen. You can see a list of these labs on our website’s conditions page under “What is additional screening?”. (https://www.babysfirsttest.org/newborn-screening/conditions). The costs for additional screening tests are typically out of pocket, and which additional screenings are ordered will depend on the information you are interested in getting. We recommend you speak with your healthcare provider about these options.
+  utter_following_up_on_results_requesting_additional_testing_is_available:
+    - text: Any additional screenings would depend on what information you are interested in getting. You can find a list of conditions that your state screens for on our states pages. If you are interested in learning about a condition not on this list, you could address that via an additional screening
+  utter_privacy_blood_spot_research_residual_dried_blood_spot:
+    - text: After newborn screening is complete, a small amount of dried blood remains on the filter paper. Each state handles the use and storage of these blood spots slightly differently. Some states store the cards for a limited amount of time and then destroy them, while others may keep them stored indefinitely. These residual samples are kept by some state labs because of their continued value to the family, to laboratories' quality control and assurance monitoring, and to public health and biomedical research. To find out more about the policies and procedures for blood spots in your state, please visit the Conditions Screened by State section and find out more about your state's newborn screening program. You can also contact your state's newborn screening program directly.
+  utter_privacy_blood_spot_research_is_sample_kept_indefinitely:
+    - text: After newborn screening is complete, a small amount of dried blood remains on the filter paper. Each state handles the use and storage of these blood spots slightly differently. Some states store the cards for a limited amount of time and then destroy them, while others may keep them stored indefinitely. These residual samples are kept by some state labs because of their continued value to the family, to laboratories' quality control and assurance monitoring, and to public health and biomedical research. To find out more about the policies and procedures for blood spots in your state, please visit the Conditions Screened by State section and find out more about your state's newborn screening program. You can also contact your state's newborn screening program directly.
+  utter_privacy_opt_out_of_newborn_screening:
+    - text: The rules and regulations for newborn screening are different in each state. While all states require newborn screening, some states do allow refusal (also called "opting out"). You can find information on which states allow refusal on our state pages. If you have specific questions about how to opt out of newborn screening, you should get in touch with the state newborn screening program. We do not recommend that families refuse newborn screening for their babies because the information that newborn screening provides is critical to understanding the baby's health and making informed decisions.
+  utter_privacy_opt_out_of_sample_being_stored:
+    - text: 'States do provide options for opting out of storage and future use of the bloodspot card. You can contact your state newborn screening department to find out about the process. You can find their information here: http://babysfirsttest.org/newborn-screening/states.'
+  utter_privacy_privacy_of_results_information_kept_private:
+    - text: In all states, the primary concern of the dried blood spot storage program is security. In most states, once newborn screening is completed, the filter paper containing the residual dried blood spot is separated from the newborn screening card that contains the newborn's identifying information. The residual dried blood spot sample is assigned a code and is stored in a locked on-site facitily accessible only by employees with extensive data privacy training. When the dried blood spot sample is used for research purposes, the sample is assigned yet another code or tracking number, ensuring that the research team is many steps removed from the number assigned to the newborn screening card with identifying information. Additionally, all requests for use of residual dried blood spots for research must be approved - at minimum - by an Institutional Review Board before the de-identified spots can be released for research. Exact procedures vary state-by-state
+  utter_privacy_privacy_of_results_screening_through_a_private_company:
+    - text: 'You can find a list of companies who provide supplemental screening at the following link (under “What is additional screening?”): http://babysfirsttest.org/newborn-screening/conditions Please note that while there are companies that provide access to a screening test, the state is also offers follow up care such as actual confirmatory testing to see if the baby does in fact have the condition, connection to social services for support, and connection to local clinics for follow up care.'
+actions:
+  - utter_privacy_opt_out_of_newborn_screening
 forms: {}
 e2e_actions: []

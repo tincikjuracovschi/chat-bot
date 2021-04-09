@@ -102,3 +102,73 @@ stories:
     steps:
       - intent: accessing_results_timing_of_results
       - action: utter_accessing_results_timing_of_results
+
+  - story: following_up_on_results_screen_positive_follow_up_second_screen_why_is_done
+    steps:
+      - intent: following_up_on_results_screen_positive_follow_up_second_screen_why_is_done
+      - action: utter_following_up_on_results_screen_positive_follow_up_second_screen_why_is_done
+
+  - story: following_up_on_results_screen_positive_follow_up_second_screen_positive_1st_test
+    steps:
+      - intent: following_up_on_results_screen_positive_follow_up_second_screen_positive_1st_test
+      - action: utter_following_up_on_results_screen_positive_follow_up_second_screen_positive_1st_test
+
+  - story: following_up_on_results_screen_positive_follow_up_second_screen_negative_1st_test
+    steps:
+      - intent: following_up_on_results_screen_positive_follow_up_second_screen_negative_1st_test
+      - action: utter_following_up_on_results_screen_positive_follow_up_second_screen_negative_1st_test
+
+  - story: following_up_on_results_confirmatory_testing_1st_screen_positive_2nd_negative
+    steps:
+      - intent: following_up_on_results_confirmatory_testing_1st_screen_positive_2nd_negative
+      - action: utter_following_up_on_results_confirmatory_testing_1st_screen_positive_2nd_negative
+
+  - story: following_up_on_results_confirmatory_testing_duration_of_testing
+    steps:
+      - intent: following_up_on_results_confirmatory_testing_duration_of_testing
+      - action: utter_following_up_on_results_confirmatory_testing_duration_of_testing
+
+  - story: following_up_on_results_retesting
+    steps:
+      - intent: following_up_on_results_retesting
+      - action: utter_following_up_on_results_retesting
+
+  - story: following_up_on_results_requesting_additional_testing_for_conditions_not_tested_for_in_my_state
+    steps:
+      - intent: following_up_on_results_requesting_additional_testing_for_conditions_not_tested_for_in_my_state
+      - action: utter_following_up_on_results_requesting_additional_testing_for_conditions_not_tested_for_in_my_state
+
+  - story: following_up_on_results_requesting_additional_testing_is_available
+    steps:
+      - intent: following_up_on_results_requesting_additional_testing_is_available
+      - action: utter_following_up_on_results_requesting_additional_testing_is_available
+
+  - story: privacy_blood_spot_research_residual_dried_blood_spot
+    steps:
+      - intent: privacy_blood_spot_research_residual_dried_blood_spot
+      - action: utter_privacy_blood_spot_research_residual_dried_blood_spot
+
+  - story: privacy_blood_spot_research_is_sample_kept_indefinitely
+    steps:
+      - intent: privacy_blood_spot_research_is_sample_kept_indefinitely
+      - action: utter_privacy_blood_spot_research_is_sample_kept_indefinitely
+
+  - story: privacy_opt_out_of_newborn_screening
+    steps:
+      - intent: privacy_opt_out_of_newborn_screening
+      - action: utter_privacy_opt_out_of_newborn_screening
+
+  - story: privacy_opt_out_of_sample_being_stored
+    steps:
+      - intent: privacy_opt_out_of_sample_being_stored
+      - action: utter_privacy_opt_out_of_sample_being_stored
+
+  - story: privacy_privacy_of_results_information_kept_private
+    steps:
+      - intent: privacy_privacy_of_results_information_kept_private
+      - action: utter_privacy_privacy_of_results_information_kept_private
+
+  - story: privacy_privacy_of_results_screening_through_a_private_company
+    steps:
+      - intent: privacy_privacy_of_results_screening_through_a_private_company
+      - action: utter_privacy_privacy_of_results_screening_through_a_private_company
