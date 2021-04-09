@@ -109,30 +109,30 @@ nlu:
       - What is an inconclusive/insuficcient/unsatisfactory/error result? Why does this happen?
   - intent: timing_of_newborn_screening_ideal_timing
     examples: |
-      - "When should Newborn screening be done?/When is the ideal time to do Newborn Screening/How long    after birth should my baby get screened?"
-      - "Why are newborns screened at 24-48 hours? Why shouldn't they be screened earlier/later?"
+      - When should Newborn screening be done?/When is the ideal time to do Newborn Screening/How long after birth should my baby get screened?
+      - Why are newborns screened at 24-48 hours? Why shouldn't they be screened earlier/later?
   - intent: timing_of_newborn_screening_later_timing
     examples: |
-      - "Can older babies get screened?/Can you do newborn screening for a baby that is [insert age older than 48 hrs]?/When is the latest/age limit that newborn screening can be done?"
+      - Can older babies get screened?/Can you do newborn screening for a baby that is [insert age older than 48 hrs]?/When is the latest/age limit that newborn screening can be done?
   - intent: timing_of_newborn_screening_2nd_screen_timing
     examples: |
-      - "When is the second screen typically done?"
+      - When is the second screen typically done?
   - intent: timing_of_newborn_screening_2nd_screen_timing_latest_age
     examples: |
-      - "What is the latest age that second screening can be done?"
+      - What is the latest age that second screening can be done?
   - intent: accessing_results_requesting_copy_of_results_child_screening_results
     examples: |
-      - "How can I access/see/receive a copy of my baby's/child's (including older child) newborn screening results?"
+      - How can I access/see/receive a copy of my baby's/child's (including older child) newborn screening results?
       - Hi, I want to access my newborn child screening result. How can I do that ?
   - intent: accessing_results_requesting_copy_of_results_adult_screening_results
     examples: |
-      - "How can I access/view/receive a copy of my own newborn screening results? (as an adult)"
+      - How can I access/view/receive a copy of my own newborn screening results? (as an adult)
   - intent: accessing_results_notification_of_results_how_will_i_be_notified
     examples: |
-      - "How Will I be notified about my child's newborn screening results?"
+      - How Will I be notified about my child's newborn screening results?
   - intent: accessing_results_notification_of_results_have_not_received_copy
     examples: |
-      - "Why haven't I received/didn’t I receive a copy of my baby's newborn screening results?"
+      - Why haven't I received/didn’t I receive a copy of my baby's newborn screening results?
   - intent: accessing_results_timing_of_results
     examples: |
-      - "How long does it take for results to come back?/I tested on[date] and still don't have results back, when will I receive results?"
+      - How long does it take for results to come back?/I tested on[date] and still don't have results back, when will I receive results?
