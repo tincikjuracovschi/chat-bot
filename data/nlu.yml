@@ -127,6 +127,7 @@ nlu:
   - intent: accessing_results_requesting_copy_of_results_adult_screening_results
     examples: |
       - How can I access/view/receive a copy of my own newborn screening results? (as an adult)
+      - I need my copy of screening results. Can you help me ?
   - intent: accessing_results_notification_of_results_how_will_i_be_notified
     examples: |
       - How Will I be notified about my child's newborn screening results?
